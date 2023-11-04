@@ -1,0 +1,88 @@
+*{
+    border:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    width:100vw;
+    height:100vh;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:#302e2b; /* #333333 */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+}
+.container-left{
+    height:100%;
+}
+.container-left .display{
+    display:flex;
+}
+.container-left .display h2{
+    color:#CCCCCC;
+    font-size:34px;
+    font-weight:500;
+    margin:20px 0px;
+}
+.takenPeices{
+    margin-left:40px;
+    display:flex;
+    align-items:center;
+    font-size:16px;
+}
+.updown{
+    margin-left:12px;
+    display:flex;
+    align-items:center;
+    font-size:16px;
+    color:#b8b8b8;
+}
+.board{
+    width:576px;
+    height:576px;
+    display:flex;
+    flex-wrap:wrap;
+}
+.square{
+    position:relative;
+    width:72px;
+    height:72px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+}
+.square svg{
+    width:48px;
+    height:48px;
+    position:relative;
+    z-index:-9;
+}
+path{
+    position:relative;
+    z-index:-10;
+}
+.peice {
+    position:relative;
+    z-index:9;
+}
+.beige{
+    background-color:#f2dab3;
+}
+.brown{
+    background-color:#9f7a5a;
+}
+.black{
+    fill:#494847;
+    stroke:black;
+    stroke-width:4;
+}
+.white{
+    fill:#FAFAFA;
+    stroke:black;
+    stroke-width:4;
+}
+.container-right{
+    height:100%;
+}
